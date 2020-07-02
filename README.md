@@ -1,5 +1,5 @@
 # Django2
 Django Ejercicio N°2
 
-Usuario: Admin
+Usuario: admin
 Contraseña: pepe1234
