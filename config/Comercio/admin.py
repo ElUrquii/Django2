@@ -17,13 +17,18 @@ class ProductoAdmin(admin.ModelAdmin):
             'fields':('precio','stock',)
         }),
     )
-    
+
+class ProveedorAdmin(admin.ModelAdmin):
+    list_display = ['nombre', 'web']
+    list_filter = ['nombre', 'rut']
+
+
 admin.site.register(Categoria)
 admin.site.register(Ciudad)
 admin.site.register(Comuna)
 admin.site.register(Direccion)
 admin.site.register(Cliente, ClienteAdmin)
 admin.site.register(Venta)
-admin.site.register(Proveedor)
+admin.site.register(Proveedor, ProveedorAdmin)
 admin.site.register(Producto, ProductoAdmin)
 admin.site.register(Detalle)
