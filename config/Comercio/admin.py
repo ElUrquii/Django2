@@ -6,6 +6,7 @@ from .models import *
 class ClienteAdmin(admin.ModelAdmin):
     list_display = ('rut', 'nombre', 'telefono')
     list_display_links = ('rut', 'nombre', 'telefono')
+    search_fields = ['rut', 'nombre', 'telefono']
 
 class ProductoAdmin(admin.ModelAdmin):
     readonly_fields = ('id',)
